@@ -14,7 +14,7 @@ I performed a comprehensive manual API testing analysis using Postman to validat
 
 ## Documentation
 All detailed test cases and API collections are organized below:
-* 📄 [Manual Test Cases]([[COLE_O_LINK_AQUI](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/swagger-petstore-api-testing.pdf)]): Detailed spreadsheet containing test scenarios, expected results, and execution status.
+** 📄 [Manual Test Cases](./docs/swagger-petstore-api-testing.pdf): Detailed spreadsheet containing test scenarios, expected results, and execution status.
 * 🚀 **Postman Collection:** Ready-to-import JSON file with all configured requests.
 
 ## Tech Stack & Tools
@@ -25,3 +25,4 @@ All detailed test cases and API collections are organized below:
 * **Automation (Future Scope):** RestAssured / Java or Cypress (API)
 
 ---
+

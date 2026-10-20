@@ -14,7 +14,7 @@ I performed a comprehensive manual API testing analysis using Postman to validat
 
 ## Documentation
 All detailed test cases and API collections are organized below:
-* 📄 [Manual Test Cases](swagger-petstore-api-testing.pdf): Detailed spreadsheet containing test scenarios, expected results, and execution status.
+* 📄 [Manual Test Cases](https://docs.google.com/spreadsheets/d/1l2ziAWQHhpjzenyjrOr2Zx9cXYHiD3z09zn6W2QeUak/edit?usp=sharing): Detailed spreadsheet containing test scenarios, expected results, and execution status.
 * 🚀 **Postman Collection:** Ready-to-import JSON file with all configured requests.
 
 ## Tech Stack & Tools

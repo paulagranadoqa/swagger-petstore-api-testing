@@ -34,7 +34,7 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 ## 📁 Documentation & Test Artifacts
 - 📄 **[Manual Test Cases Spreadsheet](https://docs.google.com/spreadsheets/d/1l2ziAWQHhpjzenyjrOr2Zx9cXYHiD3z09zn6W2QeUak/edit?usp=sharing)** — Detailed scenarios, expected vs. actual outcomes, and execution status..
 - 📄 **[Full Test Execution & Blockers Report](https://docs.google.com/document/d/1aiBCo75UyfQQANl3tjjz-taqyHvxMfNw2ZaJtELB7L8/edit?usp=sharing)** — Detailed Google Doc with execution summaries and risk logs.
-- 🚀 **Postman Collection & Environment:** Ready-to-import JSON files ([Collection](./postman/Petstore_V2.postman_collection.json) and [Environment](./postman/Petstore_Env.postman_environment.json)) included in `/postman`.
+- 🚀 **Postman Collection & Environment:** Ready-to-import JSON files ([Collection](./postman/SwaggerPetstore.postman_collection) and [Environment](./postman/SwaggerPetstore.postman_environment)) included in `/postman`.
 
 ---
 

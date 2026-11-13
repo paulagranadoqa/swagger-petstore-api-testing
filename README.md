@@ -4,6 +4,7 @@ This repository contains the end-to-end API testing strategy, manual test scenar
 
 ## 📌 Project Overview
 This project showcases a complete Quality Assurance lifecycle for backend APIs, combining manual exploratory analysis with automated end-to-end testing in **Postman** to ensure service reliability, data integrity, and strict adherence to REST API specifications.
+
 ---
 
 ## 📑 Test Scenarios & Scope
@@ -19,6 +20,7 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 - **Dynamic State & Data Chaining:** Automated generation and persistence of dynamic variables (`petId`, `orderId`, `username`) across `POST`, `GET`, `PUT`, and `DELETE` requests using `pm.environment.set()`.
 - **Automated Assertions:** Custom test scripts (`pm.test` / `pm.expect`) validating HTTP status codes, JSON response structures, data types, and business rules.
 - **Public API Resilience:** Built-in conditional assertions to gracefully handle known public sandbox behaviors and state resets (`200 OK` vs. `404 Not Found`).
+
 ---
 
 ## 🛠️ Tech Stack & Tools
@@ -33,6 +35,7 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 - 📄 **[Full Test Execution & Blockers Report](https://docs.google.com/document/d/1aiBCo75UyfQQANl3tjjz-taqyHvxMfNw2ZaJtELB7L8/edit?usp=sharing)** — Detailed Google Doc with execution summaries and risk logs.
 - 🚀 **Postman Collection & Environment:** Ready-to-import JSON files ([Collection](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_collection.json) and [Environment](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_environment.json)) included in `/postman`.
 - **🎥**[Automated Execution Demo (Jam Video)](https://jam.dev/c/4aec883d-48ed-4bec-8d8c-9e0d696013fe) — Screen recording of the Postman Collection Runner executing the full test suite.
+
 ---
 
 ## 🐛 Bug Reports & Issue Tracking

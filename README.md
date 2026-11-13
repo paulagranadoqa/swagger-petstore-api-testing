@@ -34,13 +34,14 @@ Focused on full CRUD operations, dynamic state management, data validation, and 
 ---
 
 ## 🐛 Bug Reports & Issue Tracking
-All failed test cases identified during execution were logged with step-by-step reproduction instructions and logs:
-- 📄 **Bug Reports Master Document**
+All failed test cases and unexpected API behaviors identified during execution were logged with step-by-step reproduction instructions and evidence directly in [GitHub Issues](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues):
 
 **Key Tracked Issues:**
-- `#1` - [Login] User locked out error message is missing
-- `#2` - [Checkout] Total price calculation is incorrect with tax
-- `#3` - Cart badge counter not updating in real time
+- [`#1`](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues/1) - **[NegativeTC07] [Pet Creation]** API returns `200 OK` for missing `'name'` field instead of `400 Bad Request`
+- [`#2`](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues/2) - **[NegativeTC12] [Pet Creation]** API returns generic `400 Bad Request` instead of `409 Conflict` for duplicate ID
+- [`#3`](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues/3) - **[NegativeTC15] [Order Management]** `GET /store/order/{orderId}` returns `404 Not Found` for newly created order
+- [`#4`](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues/4) - **[NegativeTC24] [User Login]** API returns `200 OK` on login attempt with invalid password
+- [`#5`](https://github.com/paulagranadoqa/swagger-petstore-api-testing/issues/5) - **[NegativeTC26] [User Creation]** API allows duplicate usernames and returns alternating records on lookup
 
 ---
 
@@ -50,20 +51,5 @@ To run the automated test suite locally:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/seu-usuario/seu-repo.git](https://github.com/seu-usuario/seu-repo.git)
-cd seu-repo
-
-
-
-
-
-## 🐛 Bug Reports & Issue Tracking
-
-All failed test cases identified during execution were logged with step-by-step reproduction instructions and logs:
-
-* 📄 **[Bug Reports Master Document](COLE_AQUI_O_LINK_DO_GOOGLE_DOCS)**
-
-### Key Tracked Issues:
-* [#1 - [Login] User locked out error message is missing](https://github.com/seu-usuario/seu-repo/issues/1)
-* [#2 - [Checkout] Total price calculation is incorrect with tax](https://github.com/seu-usuario/seu-repo/issues/2)
-* [#3 - Cart badge counter not updating in real time](https://github.com/seu-usuario/seu-repo/issues/3)
+git clone [https://github.com/paulagranadoqa/swagger-petstore-api-testing.git](https://github.com/paulagranadoqa/swagger-petstore-api-testing.git)
+cd swagger-petstore-api-testing

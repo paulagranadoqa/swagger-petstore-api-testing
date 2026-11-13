@@ -33,7 +33,7 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 
 ## 📁 Documentation & Test Artifacts
 - 📄 **[Manual Test Cases Spreadsheet](https://docs.google.com/spreadsheets/d/1l2ziAWQHhpjzenyjrOr2Zx9cXYHiD3z09zn6W2QeUak/edit?usp=sharing)** — Detailed scenarios, expected vs. actual outcomes, and execution status..
-- 📄 **[Full Test Execution & Blockers Report](COLE_AQUI_O_LINK_DO_GOOGLE_DOCS)** — Detailed Google Doc with execution summaries and risk logs.
+- 📄 **[Full Test Execution & Blockers Report](https://docs.google.com/document/d/1aiBCo75UyfQQANl3tjjz-taqyHvxMfNw2ZaJtELB7L8/edit?usp=sharing)** — Detailed Google Doc with execution summaries and risk logs.
 - 🚀 **Postman Collection & Environment:** Ready-to-import JSON files (`Collection` and `Environment`) included in `/postman`.
 
 ---

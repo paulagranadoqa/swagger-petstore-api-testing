@@ -9,18 +9,23 @@ This project showcases a complete Quality Assurance lifecycle for backend APIs, 
 
 ## 📑 Test Scenarios & Scope
 
-### 🟢 Swagger Petstore API (Manual & Automated Testing)
-Focused on full CRUD operations, dynamic state management, data validation, and automated assertion scripts using **Postman**.
-- **Pet Module:** End-to-end lifecycle (`POST`, `GET`, `PUT`, `DELETE`), fetching pets by status, and dynamic ID chaining across requests.
-- **Store Module:** Order placement, inventory tracking, cross-reference validation, and order deletion.
-- **User Module:** Complete user lifecycle management (creation, session authentication/login, profile retrieval, updates, and deletion).
-- **Automated Assertions & Resilience:** JavaScript test scripts (`pm.test` / `pm.expect`) validating HTTP status codes, response payloads, schema integrity, and edge-case handling (`200 OK`, `400 Bad Request`, `404 Not Found`) for public API stability.
+### 🟢 1. Manual & Exploratory Testing
+Focused on functional validation, boundary analysis, and negative test case execution against the Swagger Petstore V2 specification:
+- **Pet Module:** Creating, updating, fetching by status, and deleting pets, including negative payload validations.
+- **Store Module:** Order placement, inventory tracking, and order deletion workflows.
+- **User Module:** User registration, authentication flows, profile updates, and account deletion.
+
+### 🤖 2. Automated API Test Suite (Postman)
+End-to-end automated regression suite built with **Postman** and **JavaScript**, designed to run sequentially via the **Postman Collection Runner**):
+- **Dynamic State & Data Chaining:** Automated generation and persistence of dynamic variables (`petId`, `orderId`, `username`) across `POST`, `GET`, `PUT`, and `DELETE` requests using `pm.environment.set()`.
+- **Automated Assertions:** Custom test scripts (`pm.test` / `pm.expect`) validating HTTP status codes, JSON response structures, data types, and business rules.
+- **Public API Resilience:** Built-in conditional assertions to gracefully handle known public sandbox behaviors and state resets (`200 OK` vs. `404 Not Found`).
 
 ---
 
 ## 🛠️ Tech Stack & Tools
 - **API Testing & Automation:** Postman (JavaScript / Chai Assertions)
-- **CLI & Runners:** Postman Collection Runner, Newman
+- **Test Runner:** Postman Collection Runner
 - **Test Management & Docs:** Google Sheets, Google Docs, GitHub Markdown
 - **Target Service:** Swagger Petstore (V2 REST API)
 
@@ -49,7 +54,17 @@ All failed test cases and unexpected API behaviors identified during execution w
 
 To run the automated test suite locally:
 
+## 🚀 Setup & Installation
+
+To run the automated test suite locally:
+
 ### 1. Clone the repository
 ```bash
 git clone [https://github.com/paulagranadoqa/swagger-petstore-api-testing.git](https://github.com/paulagranadoqa/swagger-petstore-api-testing.git)
 cd swagger-petstore-api-testing
+```
+### 2. Running the Swagger Petstore Suite (Postman)
+1. Open **Postman** and click **Import**.
+2. Select the Collection JSON file (and the Environment JSON file, if applicable) located inside the `/postman` folder.
+3. Select the imported environment in the top-right dropdown menu.
+4. Click on the collection's three dots (`...`) -> **Run collection** to execute the entire automated suite sequentially via the **Collection Runner**.

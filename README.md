@@ -20,6 +20,7 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 - **Dynamic State & Data Chaining:** Automated generation and persistence of dynamic variables (`petId`, `orderId`, `username`) across `POST`, `GET`, `PUT`, and `DELETE` requests using `pm.environment.set()`.
 - **Automated Assertions:** Custom test scripts (`pm.test` / `pm.expect`) validating HTTP status codes, JSON response structures, data types, and business rules.
 - **Public API Resilience:** Built-in conditional assertions to gracefully handle known public sandbox behaviors and state resets (`200 OK` vs. `404 Not Found`).
+- **🎥**[Automated Execution Demo (Jam Video)](https://jam.dev/c/4aec883d-48ed-4bec-8d8c-9e0d696013fe)** — Screen recording of the Postman Collection Runner executing the full test suite.
 
 ---
 

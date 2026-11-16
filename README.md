@@ -40,7 +40,7 @@ End-to-end automated test suite built with Cypress (`cy.request()`) in `cypress/
 - 🚀 **Postman Collection & Environment:** Ready-to-import JSON files ([Collection](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_collection.json) and [Environment](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_environment.json)) included in `/postman`.
 - ⚡ **Cypress Automated Suite:** Modular specs located in `/cypress/e2e/`.
 - 🎥 **[Automated Execution Demo (Postman - Jam Video)](https://jam.dev/c/4aec883d-48ed-4bec-8d8c-9e0d696013fe)** — Screen recording of the Postman Collection Runner executing the full test suite.
-- 🎥 **[Automated Execution Demo (Cypress - Jam Video)](https://jam.dev/c/4470595c-ebde-4b55-8f4d-747909090c5c)** — Screen recording of the Cypress CLI executing all 3 API test suites (11/11 passing).
+- 🎥 **[Automated Execution Demo (Cypress - Jam Video)](https://jam.dev/c/c9020e97-49db-44a5-bd1c-97679d6d4113)** — Screen recording of the Cypress CLI executing all 3 API test suites (11/11 passing).
 
 ---
 

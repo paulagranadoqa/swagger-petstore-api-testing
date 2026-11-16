@@ -1,0 +1,1 @@
+{"name": "petstore-cypress", "scripts": {"test": "npx cypress run", "cy:open": "npx cypress open"}}

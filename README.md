@@ -21,19 +21,24 @@ End-to-end automated regression suite built with **Postman** and **JavaScript**,
 - **Automated Assertions:** Custom test scripts (`pm.test` / `pm.expect`) validating HTTP status codes, JSON response structures, data types, and business rules.
 - **Public API Resilience:** Built-in conditional assertions to gracefully handle known public sandbox behaviors and state resets (`200 OK` vs. `404 Not Found`).
 
+### ⚡ 3. Automated API Test Suite (Cypress)
+End-to-end automated test suite built with Cypress (`cy.request()`) in `cypress/e2e/` (`pet.cy.js`, `store.cy.js`, and `user.cy.js`):
+- **Covers full CRUD workflows, dynamic test data generation, and negative/edge-case scenarios using `failOnStatusCode: false`.
+
 ---
 
-## 🛠️ Tech Stack & Tools
-- **API Testing & Automation:** Postman (JavaScript / Chai Assertions)
-- **Test Runner:** Postman Collection Runner
-- **Test Management & Docs:** Google Sheets, Google Docs, GitHub Markdown
-- **Target Service:** Swagger Petstore (V2 REST API)
+🛠️ Tech Stack & Tools
+- API Testing & Automation: Postman (JavaScript / Chai Assertions), Cypress (`cy.request`)
+- Test Runner: Postman Collection Runner, Cypress CLI / Headless Runner
+- Test Management & Docs: Google Sheets, Google Docs, GitHub Markdown
+- Target Service: Swagger Petstore (V2 REST API)
 ---
 
 ## 📁 Documentation & Test Artifacts
 - 📄 **[Manual Test Cases Spreadsheet](https://docs.google.com/spreadsheets/d/1l2ziAWQHhpjzenyjrOr2Zx9cXYHiD3z09zn6W2QeUak/edit?usp=sharing)** — Detailed scenarios, expected vs. actual outcomes, and execution status..
 - 📄 **[Full Test Execution & Blockers Report](https://docs.google.com/document/d/1aiBCo75UyfQQANl3tjjz-taqyHvxMfNw2ZaJtELB7L8/edit?usp=sharing)** — Detailed Google Doc with execution summaries and risk logs.
 - 🚀 **Postman Collection & Environment:** Ready-to-import JSON files ([Collection](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_collection.json) and [Environment](https://github.com/paulagranadoqa/swagger-petstore-api-testing/blob/main/postman/SwaggerPetstore.postman_environment.json)) included in `/postman`.
+- ⚡ **Cypress Automated Suite:** Modular specs located in `/cypress/e2e/`.
 - **🎥**[Automated Execution Demo (Jam Video)](https://jam.dev/c/4aec883d-48ed-4bec-8d8c-9e0d696013fe) — Screen recording of the Postman Collection Runner executing the full test suite.
 
 ---
@@ -51,20 +56,29 @@ All failed test cases and unexpected API behaviors identified during execution w
 ---
 
 ## 🚀 Setup & Installation
-
-To run the automated test suite locally:
-
-## 🚀 Setup & Installation
-
-To run the automated test suite locally:
+To run the automated test suites locally:
 
 ### 1. Clone the repository
 ```bash
-git clone [https://github.com/paulagranadoqa/swagger-petstore-api-testing.git](https://github.com/paulagranadoqa/swagger-petstore-api-testing.git)
+git clone https://github.com/paulagranadoqa/swagger-petstore-api-testing.git
 cd swagger-petstore-api-testing
 ```
-### 2. Running the Swagger Petstore Suite (Postman)
-1. Open **Postman** and click **Import**.
+
+### 2. Running the Cypress API Test Suite (Node.js required)
+Ensure you have [Node.js](https://nodejs.org/) installed on your machine, then run:
+```bash
+# Install dependencies
+npm install
+
+# Run all API tests in headless mode (Terminal)
+npm test
+
+# Run tests interactively (Cypress Test Runner UI)
+npm run cy:open
+```
+
+### 3. Running the Postman Collection
+1. Open Postman and click **Import**.
 2. Select the Collection JSON file (and the Environment JSON file, if applicable) located inside the `/postman` folder.
 3. Select the imported environment in the top-right dropdown menu.
-4. Click on the collection's three dots (`...`) -> **Run collection** to execute the entire automated suite sequentially via the **Collection Runner**.
+4. Click on the collection's three dots (`...`) -> **Run collection** to execute the entire automated suite sequentially via the Collection Runner.
